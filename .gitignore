@@ -1,0 +1,13 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.crash
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.auto.tfvars
+
+# Local tooling
+.env
+.DS_Store
+Thumbs.db

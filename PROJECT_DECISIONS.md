@@ -13,7 +13,7 @@ Option A:
 - Environment: dev only
 
 ## Region
-- Primary: eu-north-1 (Stockholm)  ← قريب منك
+- Primary: eu-north-1 (Stockholm)  
 - Note: Confirm Free Tier eligible micro type in your account (t2.micro or t3.micro).
 
 ## Cost Guardrails
@@ -69,3 +69,22 @@ examples/
 2) Backend & State (S3 + DynamoDB)
 3) Modules (vpc, security, compute)
 4) Docs & Polish
+
+## AWS Account & Auth (Planned)
+- Account: personal AWS account
+- AWS CLI Profile Name: tf-beginner
+- Instance Micro Type (to confirm in eu-north-1): <t2.micro or t3.micro>
+
+## Phase 1 Checklist
++ [ ] Objective defined and written
++ [ ] Scope chosen (Option A)
++ [ ] Region selected (eu-north-1) with Free Tier note
++ [ ] Cost guardrails documented
++ [ ] Naming conventions decided
++ [ ] Tagging standard decided
++ [ ] Repo layout planned
++ [ ] Git strategy defined
++ [ ] Acceptance criteria listed
++ [ ] README initial draft created
++ [ ] .gitignore created
++ [ ] docs/ notes started
