@@ -88,3 +88,26 @@ examples/
 + [ ] README initial draft created
 + [ ] .gitignore created
 + [ ] docs/ notes started
+
+## Phase 2 Checklist
++ [ ] Terraform installed and version checked
++ [ ] AWS CLI installed and version checked
++ [ ] Git installed and version checked
++ [ ] Local repo initialized with git init
++ [ ] First commit created (README, gitignore, decisions)
++ [ ] GitHub repo created (public)
++ [ ] Remote origin added and pushed to main
++ [ ] Folder structure created (envs/, modules/, docs/, .github/, examples/)
++ [ ] Empty Terraform files added in envs/dev (main.tf, variables.tf, outputs.tf, provider.tf, backend.tf)
++ [ ] Second commit pushed (structure)
++ [ ] GitHub topics and description updated
+
+
+
+## Phase 3 Checklist
++ [ ] provider.tf created with AWS provider block
++ [ ] backend.tf created with S3 + DynamoDB config (placeholders only)
++ [ ] Region confirmed (eu-north-1)
++ [ ] Profile name decided (tf-dev)
++ [ ] README updated with backend details
++ [ ] Commit pushed to GitHub
