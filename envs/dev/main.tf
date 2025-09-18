@@ -25,3 +25,23 @@ module "security" {
     cost    = "free-tier"
   }
 }
+
+module "compute" {
+  source = "../../modules/compute"
+
+  subnet_id         = module.vpc.public_subnet_id
+  security_group_id = module.security.security_group_id
+
+  instance_type = "t3.micro"
+
+  key_name = ""
+
+  volume_size_gb = 8
+
+  tags = {
+    project = "terraform-ansible-aws"
+    env     = "dev"
+    owner   = "El-shado"
+    cost    = "free-tier"
+  }
+}

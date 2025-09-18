@@ -26,10 +26,16 @@ Shows modules, remote state (S3 + DynamoDB), clean repo structure, and cost guar
 - Route Table + Association
 - Outputs: VPC ID, Public Subnet ID
 
+## Compute (EC2)
+- Launches a single Free Tier eligible EC2 (t3.micro or t2.micro)
+- Amazon Linux 2023 AMI (x86_64)
+- User data installs Apache and serves a test page
+- Root volume: 8 GB gp3, encrypted
+- Outputs: instance_id, public_ip, public_dns
 
 ## Cost Safety
 - Micro instance only, small gp3 volume, no Elastic IP unless needed
-- Clear tags: project=terraform-mini, env=dev, owner=<chadi.kawaf@gmail.com>, cost=free-tier
+- Clear tags: project=terraform-mini, env=dev, owner=El-shado, cost=free-tier
 - Remember to destroy after testing
 
 ## Repo Structure (Planned)
