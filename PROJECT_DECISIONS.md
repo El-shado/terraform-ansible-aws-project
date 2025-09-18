@@ -163,3 +163,10 @@ examples/
 + [ ] README updated with screenshots
 + [ ] terraform destroy executed (clean teardown)
 + [ ] Commit(s) pushed to GitHub
+
+
+## Phase 9 — Ansible (Configuration Management)
+- Rationale: Separate infra (Terraform) from config (Ansible).
+- Files: ansible/ansible.cfg, ansible/inventory.ini (generated), ansible/playbook.yml
+- SSH: Key pair imported (shadi-rsa), SG allows SSH only from my IP.
+- Outcome: Apache installed and managed by Ansible after provisioning.
