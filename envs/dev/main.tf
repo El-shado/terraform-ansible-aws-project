@@ -34,7 +34,7 @@ module "compute" {
 
   instance_type = "t3.micro"
 
-  key_name = ""
+  key_name = "shadi-rsa"
 
   volume_size_gb = 8
 
