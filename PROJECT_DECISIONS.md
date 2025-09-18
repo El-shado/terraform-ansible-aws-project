@@ -124,3 +124,33 @@ examples/
 + [ ] Module called in envs/dev/main.tf
 + [ ] README updated with Phase 4 description
 + [ ] Commit pushed to GitHub
+
+
+## Phase 5 Checklist
+- [ ] security module folder created (main.tf, variables.tf, outputs.tf)
+- [ ] SG resource defined (SSH + HTTP)
+- [ ] SSH restricted to my IP only
+- [ ] Outputs for SG ID created
+- [ ] Module called in envs/dev/main.tf
+- [ ] README updated with Phase 5
+- [ ] Commit pushed to GitHub
+  
+## Phase 6 Checklist
+- [ ] compute module created (main.tf, variables.tf, outputs.tf, user_data.sh)
+- [ ] AMI data source set to Amazon Linux 2023
+- [ ] Instance type set to Free Tier (t3.micro/t2.micro)
+- [ ] SG and Subnet wired from previous modules
+- [ ] User data installs Apache & test page
+- [ ] Outputs (instance_id, public_ip, public_dns)
+- [ ] Module called from envs/dev/main.tf
+- [ ] README updated with Phase 6
+- [ ] Commit pushed to GitHub
+
+
+## Phase 7 Checklist
+- [ ] IAM user created (tf-dev) with programmatic access
+- [ ] AWS CLI profile configured (tf-dev, eu-north-1)
+- [ ] S3 bucket created (unique, versioning + encryption)
+- [ ] Backend configured (lockfile) and `terraform init` completed from envs/dev
+- [ ] README updated with backend details
+- [ ] Commit pushed to GitHub

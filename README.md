@@ -18,6 +18,11 @@ Shows modules, remote state (S3 + DynamoDB), clean repo structure, and cost guar
 - State locking with DynamoDB table: `tmn-tf-locks`
 - AWS CLI profile: `tf-dev`
 - Region: `eu-north-1`
+- **S3 bucket:** `tmn-tfstate-chadi` (versioning + AES256 encryption, eu-north-1)
+- **Locking:** native lockfile (`use_lockfile = true`)
+- **Profile:** `tf-dev`
+- **Files:** `envs/dev/backend.tf` + `envs/dev/backend.hcl`
+- **Init command:** `terraform -chdir=envs/dev init -backend-config=backend.hcl`
 
 ## VPC & Networking
 - Creates a VPC (10.0.0.0/16)
