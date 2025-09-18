@@ -1,0 +1,6 @@
+ec2_instance_id = "i-08a1b24c94e5fe353"
+ec2_public_dns = "ec2-51-21-152-182.eu-north-1.compute.amazonaws.com"
+ec2_public_ip = "51.21.152.182"
+public_subnet_id = "subnet-0b24e502a987fd635"
+security_group_id = "sg-0aa855500b9863bdd"
+vpc_id = "vpc-0c821657624f5dcbc"
