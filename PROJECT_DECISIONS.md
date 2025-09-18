@@ -1,7 +1,7 @@
 # Project Decisions
 
 ## Objective
-Build a small, Free-Tier-friendly AWS environment using Terraform to demonstrate real IaC practices (modules, remote state, Git repo hygiene).
+Build a small, AWS environment using Terraform to demonstrate real IaC practices (modules, remote state, Git repo hygiene).
 
 ## Scope (Chosen)
 Option A:
@@ -17,7 +17,7 @@ Option A:
 - Note: Confirm Free Tier eligible micro type in your account (t2.micro or t3.micro).
 
 ## Cost Guardrails
-- EC2: micro type only (t2.micro or t3.micro per Free Tier eligibility)
+- EC2: micro type only (t2.micro or t3.micro)
 - EBS: 8–10 GB gp3
 - No Elastic IP unless really needed
 - Always tag resources for tracking
@@ -110,4 +110,17 @@ examples/
 + [ ] Region confirmed (eu-north-1)
 + [ ] Profile name decided (tf-dev)
 + [ ] README updated with backend details
++ [ ] Commit pushed to GitHub
+
+
+## Phase 4 Checklist
++ [ ] vpc module folder created (main.tf, variables.tf, outputs.tf)
++ [ ] VPC resource defined
++ [ ] Internet Gateway defined
++ [ ] Public Subnet defined
++ [ ] Route Table + default route defined
++ [ ] Subnet association created
++ [ ] Outputs for VPC ID and Subnet ID
++ [ ] Module called in envs/dev/main.tf
++ [ ] README updated with Phase 4 description
 + [ ] Commit pushed to GitHub
