@@ -11,3 +11,10 @@ terraform.tfvars
 .env
 .DS_Store
 Thumbs.db
+
+# Terraform plans
+*.tfplan
+tfplan
+
+# Ansible inventory
+ansible/inventory.ini
